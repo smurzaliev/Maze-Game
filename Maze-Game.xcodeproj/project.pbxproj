@@ -9,24 +9,24 @@
 /* Begin PBXBuildFile section */
 		DDEFD64829B5C01300AEDA2C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEFD64729B5C01300AEDA2C /* AppDelegate.swift */; };
 		DDEFD64A29B5C01300AEDA2C /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = DDEFD64929B5C01300AEDA2C /* GameScene.sks */; };
-		DDEFD64C29B5C01300AEDA2C /* Actions.sks in Resources */ = {isa = PBXBuildFile; fileRef = DDEFD64B29B5C01300AEDA2C /* Actions.sks */; };
 		DDEFD64E29B5C01300AEDA2C /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEFD64D29B5C01300AEDA2C /* GameScene.swift */; };
 		DDEFD65029B5C01300AEDA2C /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDEFD64F29B5C01300AEDA2C /* GameViewController.swift */; };
 		DDEFD65329B5C01300AEDA2C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDEFD65129B5C01300AEDA2C /* Main.storyboard */; };
 		DDEFD65529B5C01400AEDA2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDEFD65429B5C01400AEDA2C /* Assets.xcassets */; };
 		DDEFD65829B5C01400AEDA2C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDEFD65629B5C01400AEDA2C /* LaunchScreen.storyboard */; };
+		DDEFD65F29B5C06C00AEDA2C /* level1.txt in Resources */ = {isa = PBXBuildFile; fileRef = DDEFD65E29B5C06C00AEDA2C /* level1.txt */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DDEFD64429B5C01300AEDA2C /* Maze-Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Maze-Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDEFD64729B5C01300AEDA2C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDEFD64929B5C01300AEDA2C /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
-		DDEFD64B29B5C01300AEDA2C /* Actions.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = Actions.sks; sourceTree = "<group>"; };
 		DDEFD64D29B5C01300AEDA2C /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		DDEFD64F29B5C01300AEDA2C /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		DDEFD65229B5C01300AEDA2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDEFD65429B5C01400AEDA2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDEFD65729B5C01400AEDA2C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DDEFD65E29B5C06C00AEDA2C /* level1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = level1.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,12 +61,12 @@
 			children = (
 				DDEFD64729B5C01300AEDA2C /* AppDelegate.swift */,
 				DDEFD64929B5C01300AEDA2C /* GameScene.sks */,
-				DDEFD64B29B5C01300AEDA2C /* Actions.sks */,
 				DDEFD64D29B5C01300AEDA2C /* GameScene.swift */,
 				DDEFD64F29B5C01300AEDA2C /* GameViewController.swift */,
 				DDEFD65129B5C01300AEDA2C /* Main.storyboard */,
 				DDEFD65429B5C01400AEDA2C /* Assets.xcassets */,
 				DDEFD65629B5C01400AEDA2C /* LaunchScreen.storyboard */,
+				DDEFD65E29B5C06C00AEDA2C /* level1.txt */,
 			);
 			path = "Maze-Game";
 			sourceTree = "<group>";
@@ -129,11 +129,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDEFD65F29B5C06C00AEDA2C /* level1.txt in Resources */,
 				DDEFD65329B5C01300AEDA2C /* Main.storyboard in Resources */,
 				DDEFD64A29B5C01300AEDA2C /* GameScene.sks in Resources */,
 				DDEFD65529B5C01400AEDA2C /* Assets.xcassets in Resources */,
 				DDEFD65829B5C01400AEDA2C /* LaunchScreen.storyboard in Resources */,
-				DDEFD64C29B5C01300AEDA2C /* Actions.sks in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -299,8 +299,8 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,9 +308,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.smurzaliev.home.Maze-Game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -327,8 +330,8 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UIStatusBarHidden = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = UIInterfaceOrientationLandscapeRight;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,9 +339,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.smurzaliev.home.Maze-Game";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
